@@ -81,8 +81,8 @@ class MainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        cell.textLabel?.text = persons[indexPath.row].name
-         cell.detailTextLabel?.text = persons[indexPath.row].surname
+        cell.textLabel?.text = persons[indexPath.row].name + persons[indexPath.row].surname
+     
         return cell
     }
 
@@ -93,7 +93,7 @@ class MainViewController: UITableViewController {
        
         if let indexPath = tableView.indexPathForSelectedRow {
              let detailVC = segue.destination as! DetailsViewController
-            detailVC.name = persons[indexPath.row].name
+            detailVC.name = persons[indexPath.row].name + persons[indexPath.row].surname
             detailVC.email = persons[indexPath.row].email
             detailVC.phone = persons[indexPath.row].phoneNumber
         }
