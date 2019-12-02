@@ -11,26 +11,50 @@ import Foundation
 
 class MainViewController: UITableViewController {
     
- //    var fullNames = [String]()
     var persons: [Person] = []
     
-    
-    
-    
-    var names = ["Alan","Alex", "Bob", "Robert", "Bobby", "Shean", "Dan",
-                 "Dennis", "Simon", "Frank"]
+    var names = ["Alan",
+                 "Alex",
+                 "Bob",
+                 "Robert",
+                 "Bobby",
+                 "Shean",
+                 "Dan",
+                 "Dennis",
+                 "Simon",
+                 "Frank"]
         
-    var surnames = [" Dart", " Overdor", " School", " Robinson", " Kempinski",
-        " West", " Bootman", " Gevorkyan", " Foreman", " Gooding"]
+    var surnames = [" Dart",
+                    " Overdor",
+                    " School",
+                    " Robinson",
+                    " Kempinski",
+                    " West",
+                    " Bootman",
+                    " Gevorkyan",
+                    " Foreman",
+                    " Gooding"]
         
-    var emails = ["asd@yahoo.com", "12boo@abc.com", "darling@gmail.com",
-                 "weare2@am.online", "dots12@asd.net", "forto@reg.com",
-                 "cooking33@twist.com", "12_34@gmail.com",
-                 "hum1965@yahoo.com","turbo99@vic.net"]
+    var emails = ["asd@yahoo.com",
+                  "12boo@abc.com",
+                  "darling@gmail.com",
+                  "weare2@am.online",
+                  "dots12@asd.net",
+                  "forto@reg.com",
+                  "cooking33@twist.com",
+                  "12_34@gmail.com",
+                  "hum1965@yahoo.com",
+                  "turbo99@vic.net"]
         
-    var phoneNumbers = ["1238783434", "9048758765", "9083456234",
-                        "9883412345","9179998846", "9071264536",
-                        "9072386500", "9872388399","9998578746",
+    var phoneNumbers = ["1238783434",
+                        "9048758765",
+                        "9083456234",
+                        "9883412345",
+                        "9179998846",
+                        "9071264536",
+                        "9072386500",
+                        "9872388399",
+                        "9998578746",
                         "9309839998374"]
 
     override func viewDidLoad() {
