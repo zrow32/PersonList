@@ -22,7 +22,7 @@ class MainViewController: UITableViewController {
                  "Dan",
                  "Dennis",
                  "Simon",
-                 "Frank"]
+                 "Frank"].shuffled()
         
     var surnames = [" Dart",
                     " Overdor",
@@ -33,7 +33,7 @@ class MainViewController: UITableViewController {
                     " Bootman",
                     " Gevorkyan",
                     " Foreman",
-                    " Gooding"]
+                    " Gooding"].shuffled()
         
     var emails = ["asd@yahoo.com",
                   "12boo@abc.com",
@@ -44,7 +44,7 @@ class MainViewController: UITableViewController {
                   "cooking33@twist.com",
                   "12_34@gmail.com",
                   "hum1965@yahoo.com",
-                  "turbo99@vic.net"]
+                  "turbo99@vic.net"].shuffled()
         
     var phoneNumbers = ["1238783434",
                         "9048758765",
@@ -55,17 +55,17 @@ class MainViewController: UITableViewController {
                         "9072386500",
                         "9872388399",
                         "9998578746",
-                        "9309839998374"]
+                        "9309839998374"].shuffled()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        for _ in 1...10 {
+        for i in 0...9 {
             
-            let person = Person(name: names.randomElement() ?? "",
-                                surname: surnames.randomElement() ?? "",
-                                email: emails.randomElement() ?? "",
-                                phoneNumber: phoneNumbers.randomElement() ?? "" )
+            let person = Person(name: names[i],
+                                surname: surnames[i],
+                                email: emails[i],
+                                phoneNumber: phoneNumbers[i])
             persons.append(person)
         }
     }
